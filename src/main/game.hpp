@@ -2,7 +2,7 @@
 
 #define GAME_HPP
 #include <SDL2/SDL.h>
-#include <bits/stdc++.h>
+#include "../stdc++.h"
 #include <SDL2/SDL_image.h>
 #include "./../playstate/play.cpp";
 using namespace std;

@@ -1,7 +1,7 @@
 #ifndef MAZE_H
 
 #define MAZE_H
-#include<bits/stdc++.h>
+#include"../stdc++.h"
 #include "./../texture/Texture.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>

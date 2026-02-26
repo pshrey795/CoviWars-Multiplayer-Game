@@ -1,7 +1,7 @@
 #ifndef SOUNDS_H
 
 #define SOUNDS_H
-#include <bits/stdc++.h>
+#include "../stdc++.h"
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_mixer.h>
 #include "./../network/network.h";

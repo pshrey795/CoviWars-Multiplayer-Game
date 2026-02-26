@@ -3,7 +3,7 @@
 #define CHR_H
 #include<SDL2/SDL.h>
 #include<SDL2/SDL_image.h>
-#include<bits/stdc++.h>
+#include"../stdc++.h"
 #include "./../sound/sounds.h"
 #include "enemy.h";
 

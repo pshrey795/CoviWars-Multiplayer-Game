@@ -2,7 +2,7 @@
 
 #define BUTTON_H
 #include <SDL2/SDL.h>
-#include <bits/stdc++.h>
+#include "../stdc++.h"
 #include <SDL2/SDL_image.h>
 #include "./../sound/sounds.h"
 #include "./../texture/Texture.h"

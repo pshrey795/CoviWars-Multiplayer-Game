@@ -42,7 +42,11 @@ Button::Button(char* name, SDL_Renderer* localRenderer,string fnt,int r,int g,in
 	font=TTF_OpenFont("./../fonts/batmfa.ttf",20);
 	
 	//Generating button texture from SDL surface
-	SDL_Surface *textSurface=TTF_RenderText_Solid(font,label,{r,g,b,255});
+	SDL_Color color = { static_cast<Uint8>(r),
+                    static_cast<Uint8>(g),
+                    static_cast<Uint8>(b),
+                    255 };
+	SDL_Surface *textSurface = TTF_RenderText_Solid(font, label, color);
 	colors[0].push_back(SDL_CreateTextureFromSurface(renderer,textSurface));
 	
 	
@@ -115,7 +119,11 @@ bool Button::isInside(int a,int b){
 void Button::changeLabel(string newlabel,string fnt,int r,int g,int b){
 
 	if (button_debug)cout<<"button.cpp:changeLabel:"<<newlabel<<"\n";
-	SDL_Surface *textSurface=TTF_RenderText_Solid(font,&newlabel[0],{r,g,b,255});
+	SDL_Color color = { static_cast<Uint8>(r),
+                    static_cast<Uint8>(g),
+                    static_cast<Uint8>(b),
+                    255 };
+	SDL_Surface *textSurface=TTF_RenderText_Solid(font,&newlabel[0],color);
 	if (textSurface==nullptr){
 		cout<<"Couldn;t find font\n";
 		return;
